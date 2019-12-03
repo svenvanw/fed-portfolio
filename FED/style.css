@@ -1,0 +1,192 @@
+/**** BASICS ****/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+
+h1 {
+    color: plum;
+    font-family: aclonica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+
+h2 {
+    font-family: aclonica, sans-serif;
+    font-size: 1.7em;
+    text-align: right;
+    color: white;
+    letter-spacing: 0.9vw;
+}
+
+h3 {
+    color: midnightblue;
+    font-family: aclonica;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 5.5em 0;
+}
+
+p i {
+    color: plum;
+    font-size: 2em;
+    margin: 1em 50% 0;
+}
+
+h5 {
+    font-family: play, sans-serif;
+    color: plum;
+    text-align: center;
+}
+
+p {
+    font-family: play, sans-serif;
+    color: white;
+}
+
+p:last-child {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: plum;
+}
+
+a:link {
+    text-decoration: none;
+    color: plum;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 2px 2px plum;
+}
+
+
+/**** NAVIGATION ****/
+
+.octo {
+    height: 65px;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: auto;
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav ul {
+    -webkit-box-shadow: 4px 2px midnightblue;
+    box-shadow: 4px 2px midnightblue;
+}
+
+ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: white;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 4em;
+    margin: 1em 2em;
+}
+
+li {
+    padding: 0.6em 3.5vw;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-family: aclonica, sans-serif;
+    text-transform: uppercase;
+    color: mediumorchid;
+}
+
+li:last-child {
+    border-radius: 4em 0 0 4em;
+}
+
+
+
+/**** BODY ****/
+
+
+article {
+    margin: 1%;
+    padding: 1vw;
+    background-image: linear-gradient(-30deg, midnightblue, pink);
+}
+
+article:hover {
+    background-image: linear-gradient(-30deg, pink, midnightblue);
+    border-color: white;
+    image-filter: saturate(100);
+}
+
+section article {
+    margin-bottom: 1em;
+    padding: 0.6em
+}
+
+@media (min-width: 373px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 80em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 5em;
+    }
+}
+
+article img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 13vw;
+    min-height: 8em;
+    -webkit-filter: saturate(0);
+    filter: saturate(0);
+}
+
+article p:first-of-type {
+    text-align: right;
+}
+
+
+/**** DETAIL PAGINA ****/
+
+.details {
+    width: 100vw;
+    background-image: linear-gradient(-30deg, midnightblue, pink);
+    padding: 2vw;
+}
+
+.details img {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: saturate(1);
+    filter: saturate(1);
+    margin: 0;
+    padding: 0;
+}
+
+.details p {
+    max-width: 70ch;
+}
